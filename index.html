@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>🎧 Listening Improvement System</title>
+<style>
+:root{--bg:#f4f7f5;--card:#fff;--text:#17211b;--muted:#5f6f65;--line:#dfe7e1;--accent:#16835b;--accent2:#0f6a49;--code:#eef4f0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(135deg,#f4f8f5,#edf4ef);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.75}
+.wrap{max-width:1050px;margin:0 auto;padding:34px 20px 70px}.hero{background:linear-gradient(135deg,#0f6a49,#16835b);color:white;border-radius:24px;padding:38px 34px;margin-bottom:24px;box-shadow:0 18px 45px rgba(15,106,73,.18)}.hero h1{margin:0 0 8px;font-size:clamp(28px,4vw,44px);line-height:1.2}.hero p{margin:0;opacity:.9;font-size:17px}.content{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:34px;box-shadow:0 12px 35px rgba(20,50,35,.07)}
+h1,h2,h3{color:#123b2a;line-height:1.3;margin-top:1.7em}h1{font-size:32px;border-bottom:1px solid var(--line);padding-bottom:10px}h2{font-size:26px}h3{font-size:21px}p{margin:14px 0}strong{color:#0d6848}blockquote{margin:18px 0;padding:14px 18px;border-left:4px solid var(--accent);background:#f1f7f3;border-radius:0 12px 12px 0}hr{border:0;border-top:1px solid var(--line);margin:28px 0}ul,ol{padding-left:28px}li{margin:4px 0}code{background:var(--code);padding:2px 6px;border-radius:6px;font-size:.92em}.table-wrap{overflow-x:auto;margin:18px 0}table{width:100%;border-collapse:collapse;min-width:560px}th,td{text-align:left;vertical-align:top;border:1px solid var(--line);padding:10px 12px}th{background:#edf6f1;color:#123b2a;font-weight:700}tr:nth-child(even) td{background:#fafcfb}.top{position:sticky;bottom:18px;display:block;width:max-content;margin:28px auto 0;padding:9px 15px;border-radius:999px;background:#123b2a;color:#fff;text-decoration:none;font-size:14px}.meta{text-align:center;color:var(--muted);font-size:13px;margin-top:18px}
+@media(max-width:700px){.wrap{padding:18px 10px 45px}.hero{padding:28px 22px;border-radius:18px}.content{padding:22px 17px;border-radius:18px}h1{font-size:27px}h2{font-size:23px}h3{font-size:19px}}
+</style>
+</head>
+<body id="top">
+<div class="wrap">
+<header class="hero"><h1>🎧 Listening Improvement System</h1><p>From Intermittent Listening to Automatic Recognition</p></header>
+<main class="content"><h1>🎧 Listening Improvement System</h1>
+<h2>From Intermittent Listening to Automatic Recognition</h2>
+<hr>
+<h1>1. 🎯 مشکل اصلی من در Listening چیست؟</h1>
+<p>مشکل Listening همیشه به معنی «بلد نبودن کلمه» نیست.</p>
+<p>دو حالت بسیار مهم وجود دارد:</p>
+<div class="table-wrap"><table><thead><tr><th>وضعیت</th><th>توضیح</th><th>نوع مشکل</th></tr></thead><tbody><tr><td>📚 Unknown Word</td><td>کلمه را اصلاً نمی‌دانم</td><td>Vocabulary Problem</td></tr><tr><td>🎧 Known but Not Heard</td><td>کلمه را می‌دانم اما در Audio تشخیص نمی‌دهم</td><td>Sound Recognition Problem</td></tr></tbody></table></div>
+<h3>مسیر کلی</h3>
+<p>English Audio  <br>↓  <br>👂 What I Hear  <br>↓  <br><strong>آیا کلمه را می‌دانم؟</strong></p>
+<p>→ ❌ No → Vocabulary Problem</p>
+<p>→ ✅ Yes → <strong>آیا صدای آن را در گفتار واقعی تشخیص دادم؟</strong></p>
+<p>→ ❌ No → Sound Recognition Problem</p>
+<p>→ ✅ Yes → Continue Listening</p>
+<hr>
+<h1>2. 🧠 شکاف اصلی Listening</h1>
+<p>گاهی دانش ما از کلمه وجود دارد، اما ارتباط بین <strong>کلمه و صدای واقعی آن</strong> هنوز خودکار نشده است.</p>
+<h3>مثال</h3>
+<p>من کلمه‌ی زیر را می‌دانم:</p>
+<p><strong>dependence</strong></p>
+<p>اما در Audio طبیعی ممکن است آن را تشخیص ندهم.</p>
+<p>پس:</p>
+<p><strong>Vocabulary Knowledge → ✅</strong></p>
+<p>اما:</p>
+<p><strong>Sound Recognition → ❌</strong></p>
+<p>این فاصله را می‌توان <strong>Sound Recognition Gap</strong> نامید.</p>
+<h3>هدف</h3>
+<p>ساختن این ارتباط:</p>
+<p><strong>Sound → Word → Meaning</strong></p>
+<p>به‌صورت سریع و در نهایت تقریباً خودکار.</p>
+<hr>
+<h1>3. 🟢 Extensive Listening چیست؟</h1>
+<h2>Definition</h2>
+<p><strong>Extensive Listening</strong> یعنی مقدار زیادی انگلیسی را نسبتاً راحت گوش بدهیم، با تمرکز اصلی روی <strong>معنی کلی و جریان زبان</strong>، نه تحلیل تک‌تک کلمات.</p>
+<p>در Extensive Listening لازم نیست همه‌چیز را بفهمیم.</p>
+<h3>هدف اصلی</h3>
+<blockquote>عادت دادن مغز به انگلیسی واقعی و جریان طبیعی زبان.</blockquote>
+<hr>
+<h1>4. 🟢 ویژگی‌های Extensive Listening</h1>
+<div class="table-wrap"><table><thead><tr><th>ویژگی</th><th>Extensive Listening</th></tr></thead><tbody><tr><td>مقدار Audio</td><td>زیاد</td></tr><tr><td>تمرکز اصلی</td><td>General Meaning</td></tr><tr><td>Transcript</td><td>معمولاً ❌</td></tr><tr><td>Pause</td><td>کم</td></tr><tr><td>Replay</td><td>محدود</td></tr><tr><td>Dictation</td><td>معمولاً ❌</td></tr><tr><td>Analysis</td><td>کم</td></tr><tr><td>هدف</td><td>Listening Fluency</td></tr><tr><td>فشار ذهنی</td><td>نسبتاً کم</td></tr><tr><td>سرعت</td><td>طبیعی</td></tr></tbody></table></div>
+<hr>
+<h1>5. 🟢 چه چیزهایی را با Extensive Listening تقویت می‌کنیم؟</h1>
+<ul><li>Natural Speed</li><li>Natural Rhythm</li><li>Intonation</li><li>Stress</li><li>Different Voices</li><li>Different Accents</li><li>Connected Speech</li><li>Longer Sentences</li><li>Continuous English</li><li>General Listening Fluency</li></ul>
+<p>هدف این نیست:</p>
+<blockquote>&quot;I must understand every word.&quot;</blockquote>
+<p>هدف این است:</p>
+<blockquote>&quot;I can follow English as it flows.&quot;</blockquote>
+<hr>
+<h1>6. 🟢 تمرین‌های Extensive Listening</h1>
+<h2>Exercise 1 — Main Idea</h2>
+<p>یک Audio انتخاب کن:</p>
+<ul><li>Podcast</li><li>Interview</li><li>News</li><li>Economist</li><li>YouTube</li><li>Documentary</li></ul>
+<p>مدت مناسب:</p>
+<p><strong>10–30 دقیقه</strong></p>
+<p>بدون توقف زیاد گوش بده.</p>
+<p>بعد از خودت بپرس:</p>
+<ul><li>What is this about?</li><li>What is the main idea?</li><li>What problem is being discussed?</li><li>What examples were mentioned?</li></ul>
+<hr>
+<h2>Exercise 2 — Listening Without Stopping</h2>
+<p>قانون اصلی:</p>
+<blockquote><strong>Don't stop every time you miss something.</strong></blockquote>
+<p>اگر یک جمله را نفهمیدی:</p>
+<p>❌ Pause نکن  <br>❌ Transcript را فوراً باز نکن  <br>❌ ترجمه فوری نکن</p>
+<p>بلکه:</p>
+<p><strong>Keep Listening → Continue → Catch the Next Idea</strong></p>
+<p>هدف این است که مغز یاد بگیرد حتی اگر بخشی از پیام را از دست داد، پردازش را ادامه دهد.</p>
+<hr>
+<h2>Exercise 3 — General Questions</h2>
+<p>بعد از Listening به چند سؤال کلی جواب بده:</p>
+<div class="table-wrap"><table><thead><tr><th>سؤال</th><th>هدف</th></tr></thead><tbody><tr><td>What is the topic?</td><td>تشخیص موضوع</td></tr><tr><td>What is the main idea?</td><td>تشخیص ایده اصلی</td></tr><tr><td>What problem is being discussed?</td><td>تشخیص مسئله</td></tr><tr><td>What examples were mentioned?</td><td>تشخیص مثال‌ها</td></tr><tr><td>What is the conclusion?</td><td>تشخیص نتیجه</td></tr></tbody></table></div>
+<hr>
+<h2>Exercise 4 — Repeated Listening</h2>
+<p>یک Audio را فقط یک بار گوش نده.</p>
+<p>مثلاً:</p>
+<p><strong>Day 1 → First Listening</strong></p>
+<p><strong>Day 2 → Second Listening</strong></p>
+<p><strong>Day 3 → Third Listening</strong></p>
+<p>معمولاً در Listening دوم و سوم بخش‌هایی را می‌شنوی که در بار اول از دست داده بودی.</p>
+<hr>
+<h1>7. 🔴 Intensive Listening چیست؟</h1>
+<h2>Definition</h2>
+<p><strong>Intensive Listening</strong> یعنی مقدار کمی Audio را بسیار دقیق و عمیق بررسی کنیم تا بفهمیم:</p>
+<ol><li>چه چیزی را نشنیدیم؟</li><li>چرا نشنیدیم؟</li><li>مشکل دقیقاً چه بود؟</li><li>چگونه همان مشکل را اصلاح کنیم؟</li></ol>
+<hr>
+<h1>8. 🔴 ویژگی‌های Intensive Listening</h1>
+<div class="table-wrap"><table><thead><tr><th>ویژگی</th><th>Intensive Listening</th></tr></thead><tbody><tr><td>مقدار Audio</td><td>کم</td></tr><tr><td>تمرکز</td><td>جزئیات</td></tr><tr><td>Transcript</td><td>✅</td></tr><tr><td>Pause</td><td>زیاد</td></tr><tr><td>Replay</td><td>زیاد</td></tr><tr><td>Dictation</td><td>✅</td></tr><tr><td>Error Analysis</td><td>✅</td></tr><tr><td>Pronunciation Analysis</td><td>✅</td></tr><tr><td>Connected Speech</td><td>✅</td></tr><tr><td>هدف</td><td>Listening Accuracy</td></tr></tbody></table></div>
+<hr>
+<h1>9. 🔴 چرا Intensive Listening برای مشکل من مهم است؟</h1>
+<p>اگر مشکل من این باشد:</p>
+<blockquote>&quot;Sometimes I know the word, but I don't recognize it in the audio.&quot;</blockquote>
+<p>Intensive Listening ابزار اصلی برای پیدا کردن و تعمیر این مشکل است.</p>
+<p>چون اینجا می‌توانیم دقیقاً ببینیم:</p>
+<p><strong>What I heard</strong></p>
+<p>در مقابل:</p>
+<p><strong>What was actually said</strong></p>
+<hr>
+<h1>10. 🔴 چرخه اصلی Intensive Listening</h1>
+<p><strong>🎧 Audio</strong></p>
+<p>↓</p>
+<p><strong>1. First Listen</strong></p>
+<p>↓</p>
+<p><strong>2. What did I hear?</strong></p>
+<p>↓</p>
+<p><strong>3. Dictation</strong></p>
+<p>↓</p>
+<p><strong>4. Transcript</strong></p>
+<p>↓</p>
+<p><strong>5. Compare</strong></p>
+<p>↓</p>
+<p><strong>6. Diagnose</strong></p>
+<p>↓</p>
+<p><strong>7. Targeted Practice</strong></p>
+<p>↓</p>
+<p><strong>8. Listen Again</strong></p>
+<p>↓</p>
+<p><strong>9. Shadow / Repeat</strong></p>
+<p>↓</p>
+<p><strong>10. Automatic Recognition</strong></p>
+<hr>
+<h1>11. 🔴 Step 1 — First Listen</h1>
+<p>اول Audio را بدون Transcript گوش بده.</p>
+<p>سؤال:</p>
+<blockquote><strong>What did I hear?</strong></blockquote>
+<p>Transcript را هنوز باز نکن.</p>
+<p>هدف:</p>
+<blockquote>ببینیم مغز واقعاً چه چیزی را از Audio دریافت کرده است.</blockquote>
+<hr>
+<h1>12. 🔴 Step 2 — Dictation</h1>
+<p>هر چیزی را که شنیدی بنویس.</p>
+<p><strong>🎧 Audio → ✍️ Write What You Hear</strong></p>
+<p>لازم نیست جمله کامل باشد.</p>
+<p>حتی اگر فقط 70٪ جمله را فهمیدی، همان چیزی را که واقعاً شنیدی ثبت کن.</p>
+<hr>
+<h1>13. 🔴 Step 3 — Transcript Check</h1>
+<p>حالا Transcript را باز کن.</p>
+<p>دو چیز را کنار هم قرار بده:</p>
+<div class="table-wrap"><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>What I Heard</strong></td><td>چیزی که شنیدم</td></tr><tr><td><strong>What Was Actually Said</strong></td><td>چیزی که واقعاً گفته شد</td></tr></tbody></table></div>
+<hr>
+<h1>14. 🔴 Step 4 — Compare</h1>
+<p>تفاوت‌ها را پیدا کن.</p>
+<h3>Example</h3>
+<p><strong>Transcript:</strong></p>
+<blockquote>People are increasingly turning to AI for companionship.</blockquote>
+<p><strong>What I Heard:</strong></p>
+<blockquote>People are turning to AI for companionship.</blockquote>
+<p>کلمه‌ای که از دست رفته:</p>
+<p><strong>increasingly</strong></p>
+<p>حالا سؤال مهم:</p>
+<blockquote>Why did I miss it?</blockquote>
+<hr>
+<h1>15. 🔍 Step 5 — Diagnose the Problem</h1>
+<p>هر چیزی که نشنیدی را فوراً Vocabulary Problem محسوب نکن.</p>
+<p>ابتدا آن را طبقه‌بندی کن.</p>
+<div class="table-wrap"><table><thead><tr><th>مشکل</th><th>سؤال تشخیصی</th></tr></thead><tbody><tr><td>📚 Unknown Vocabulary</td><td>آیا اصلاً کلمه را می‌دانستم؟</td></tr><tr><td>🎧 Known but Not Heard</td><td>آیا کلمه را می‌دانستم ولی صدایش را نشناختم؟</td></tr><tr><td>🗣️ Pronunciation</td><td>آیا تلفظ واقعی برایم ناآشنا بود؟</td></tr><tr><td>🔗 Connected Speech</td><td>آیا صداها به هم متصل شده بودند؟</td></tr><tr><td>🔉 Weak Form</td><td>آیا کلمه ضعیف تلفظ شده بود؟</td></tr><tr><td>⚡ Speed</td><td>آیا سرعت زیاد بود؟</td></tr><tr><td>🧩 Grammar / Structure</td><td>آیا ساختار جمله مشکل ایجاد کرد؟</td></tr></tbody></table></div>
+<hr>
+<h1>16. ⭐ مهم‌ترین دسته برای مشکل من</h1>
+<h2>Known but Not Heard</h2>
+<p>اگر بگویم:</p>
+<blockquote>«این کلمه را بلد بودم، ولی اصلاً نشنیدم.»</blockquote>
+<p>نباید فقط معنی آن را دوباره بخوانم.</p>
+<p>مشکل اصلی ممکن است <strong>Sound Recognition</strong> باشد.</p>
+<h3>مسیر تمرین</h3>
+<p><strong>Word</strong></p>
+<p>↓</p>
+<p><strong>Pronunciation</strong></p>
+<p>↓</p>
+<p><strong>Real Audio</strong></p>
+<p>↓</p>
+<p><strong>Repeated Listening</strong></p>
+<p>↓</p>
+<p><strong>Shadowing</strong></p>
+<p>↓</p>
+<p><strong>Recognition</strong></p>
+<hr>
+<h1>17. 🗣️ Pronunciation Analysis</h1>
+<p>اگر کلمه را می‌دانم اما نمی‌شنوم، باید بررسی کنم:</p>
+<div class="table-wrap"><table><thead><tr><th>عنصر</th><th>سؤال</th></tr></thead><tbody><tr><td>Stress</td><td>استرس کجاست؟</td></tr><tr><td>Syllables</td><td>چند هجا دارد؟</td></tr><tr><td>Weak Forms</td><td>آیا بخشی ضعیف‌تر تلفظ شده؟</td></tr><tr><td>Reduction</td><td>آیا بعضی صداها کاهش یافته‌اند؟</td></tr><tr><td>Linking</td><td>آیا به کلمه بعدی متصل شده؟</td></tr><tr><td>Rhythm</td><td>نقش آن در ریتم جمله چیست؟</td></tr><tr><td>Speed</td><td>آیا سرعت باعث مشکل شده؟</td></tr></tbody></table></div>
+<hr>
+<h1>18. 🔗 Connected Speech</h1>
+<p>در گفتار طبیعی کلمات همیشه کاملاً جدا شنیده نمی‌شوند.</p>
+<p>ممکن است:</p>
+<p><strong>Word A + Word B</strong></p>
+<p>به یک جریان صوتی متصل تبدیل شود.</p>
+<p>بنابراین نباید همیشه انتظار داشته باشیم:</p>
+<p><strong>WORD A | WORD B | WORD C</strong></p>
+<p>را کاملاً جدا بشنویم.</p>
+<p>گاهی چیزی که می‌شنویم بیشتر شبیه یک:</p>
+<p><strong>Sound Stream</strong></p>
+<p>است.</p>
+<hr>
+<h1>19. 🔉 Weak Forms</h1>
+<p>بعضی کلمات در گفتار طبیعی استرس زیادی ندارند.</p>
+<p>در نتیجه ممکن است شکل شنیداری آن‌ها با چیزی که در ذهن داریم متفاوت باشد.</p>
+<p>مسیر:</p>
+<p><strong>Written Form</strong></p>
+<p>↓</p>
+<p><strong>Dictionary Pronunciation</strong></p>
+<p>↓</p>
+<p><strong>Natural Speech</strong></p>
+<p>↓</p>
+<p><strong>Weak / Reduced Form</strong></p>
+<p>بنابراین باید علاوه بر تلفظ Dictionary، با <strong>Real Speech</strong> نیز آشنا شویم.</p>
+<hr>
+<h1>20. ⚡ Speed Problem</h1>
+<p>گاهی مشکل فقط سرعت است.</p>
+<p>مثلاً:</p>
+<div class="table-wrap"><table><thead><tr><th>حالت</th><th>نتیجه</th></tr></thead><tbody><tr><td>Slow Audio</td><td>✅ می‌فهمم</td></tr><tr><td>Medium Audio</td><td>🟡 بعضی قسمت‌ها</td></tr><tr><td>Normal Audio</td><td>❌ بعضی قسمت‌ها را از دست می‌دهم</td></tr><tr><td>Fast Natural Speech</td><td>❌❌ مشکل زیاد</td></tr></tbody></table></div>
+<p>در این حالت می‌توانیم به‌تدریج حرکت کنیم:</p>
+<p><strong>Slow → Medium → Normal → Natural Fast Speech</strong></p>
+<hr>
+<h1>21. 🎯 Step 6 — Targeted Practice</h1>
+<p>بعد از Diagnose نباید همه‌چیز را با هم تمرین کنیم.</p>
+<p>باید دقیقاً همان مشکل را تمرین کنیم.</p>
+<div class="table-wrap"><table><thead><tr><th>مشکل</th><th>تمرین مناسب</th></tr></thead><tbody><tr><td>📚 Unknown Word</td><td>Vocabulary Study</td></tr><tr><td>🎧 Known but Not Heard</td><td>Repeated Listening + Sound Recognition</td></tr><tr><td>🗣️ Pronunciation</td><td>Pronunciation Practice</td></tr><tr><td>🔗 Connected Speech</td><td>Connected-Speech Listening</td></tr><tr><td>🔉 Weak Form</td><td>Weak-Form Recognition</td></tr><tr><td>⚡ Speed</td><td>Gradual Speed Training</td></tr><tr><td>🧩 Structure</td><td>Grammar / Sentence Analysis</td></tr></tbody></table></div>
+<p>اصل مهم:</p>
+<blockquote><strong>Practice the exact problem.</strong></blockquote>
+<hr>
+<h1>22. 🔁 Step 7 — Listen Again</h1>
+<p>بعد از تمرین، دوباره همان جمله را بدون Transcript گوش بده.</p>
+<p>سؤال:</p>
+<blockquote><strong>Can I hear it now?</strong></blockquote>
+<p>اگر این بار توانستی کلمه را بشنوی:</p>
+<p><strong>Before:</strong></p>
+<blockquote>I know this word, but I can't hear it.</blockquote>
+<p><strong>After:</strong></p>
+<blockquote>Oh! Now I can hear it.</blockquote>
+<p>این یک پیشرفت واقعی است.</p>
+<hr>
+<h1>23. 🗣️ Step 8 — Shadowing</h1>
+<p>بعد از اینکه جمله را فهمیدی، آن را همراه گوینده تکرار کن.</p>
+<p><strong>🎧 Speaker → 🗣️ You</strong></p>
+<p>روی این موارد تمرکز کن:</p>
+<ul><li>Rhythm</li><li>Stress</li><li>Intonation</li><li>Linking</li><li>Speed</li><li>Pronunciation</li></ul>
+<p>Shadowing فقط برای Speaking نیست.</p>
+<p>به Listening نیز کمک می‌کند، چون مغز با الگوی صوتی واقعی بیشتر آشنا می‌شود.</p>
+<hr>
+<h1>24. ⚡ Step 9 — Automatic Recognition</h1>
+<p>هدف نهایی این نیست که هر بار آگاهانه فکر کنیم:</p>
+<blockquote>«این چه کلمه‌ای بود؟»</blockquote>
+<p>هدف این است:</p>
+<p><strong>Audio → Sound → Word → Meaning</strong></p>
+<p>به‌صورت سریع و در نهایت خودکار پردازش شود.</p>
+<hr>
+<h1>25. 📈 مراحل پیشرفت</h1>
+<h3>Stage 1</h3>
+<blockquote>I know this word, but I can't hear it.</blockquote>
+<p>↓</p>
+<h3>Stage 2</h3>
+<blockquote>I can hear it if I concentrate.</blockquote>
+<p>↓</p>
+<h3>Stage 3</h3>
+<blockquote>Oh, I recognize it.</blockquote>
+<p>↓</p>
+<h3>Stage 4</h3>
+<blockquote>I recognize it automatically.</blockquote>
+<p>↓</p>
+<h3>⚡ Automatic Recognition</h3>
+<hr>
+<h1>26. 🔬 Micro Listening</h1>
+<p>یکی از بهترین تمرین‌ها برای مشکل من:</p>
+<blockquote><strong>Micro Listening</strong></blockquote>
+<p>یعنی به‌جای اینکه همیشه فایل‌های طولانی را تحلیل کنیم، فقط یک جمله یا عبارت کوتاه را انتخاب کنیم.</p>
+<h3>چرخه</h3>
+<p><strong>One Sentence</strong></p>
+<p>↓</p>
+<p><strong>Listen 1</strong></p>
+<p>↓</p>
+<p><strong>Listen 2</strong></p>
+<p>↓</p>
+<p><strong>Listen 3</strong></p>
+<p>↓</p>
+<p><strong>Transcript</strong></p>
+<p>↓</p>
+<p><strong>Analysis</strong></p>
+<p>↓</p>
+<p><strong>Listen Again</strong></p>
+<p>↓</p>
+<p><strong>Shadow</strong></p>
+<hr>
+<h1>27. ✍️ Dictation Training</h1>
+<p>Dictation برای پیدا کردن شکاف Listening بسیار مفید است.</p>
+<h3>فرآیند</h3>
+<p><strong>🎧 Listen</strong></p>
+<p>↓</p>
+<p><strong>✍️ Write</strong></p>
+<p>↓</p>
+<p><strong>📄 Check</strong></p>
+<p>↓</p>
+<p><strong>🔍 Compare</strong></p>
+<p>↓</p>
+<p><strong>🧠 Diagnose</strong></p>
+<h3>نکته</h3>
+<p>Dictation نباید فقط تبدیل به امتحان Spelling شود.</p>
+<p>هدف اصلی:</p>
+<blockquote><strong>What sounds did I actually recognize?</strong></blockquote>
+<hr>
+<h1>28. 📊 Listening Error Log</h1>
+<p>برای پیشرفت بهتر، اشتباهات را ثبت کن.</p>
+<div class="table-wrap"><table><thead><tr><th>#</th><th>Word / Chunk</th><th>Did I Know It?</th><th>Problem</th><th>Solution</th></tr></thead><tbody><tr><td>1</td><td>increasingly</td><td>✅</td><td>🎧 Not Heard</td><td>Replay + Shadow</td></tr><tr><td>2</td><td>dependence</td><td>✅</td><td>🔗 Connected Speech</td><td>Sound Analysis</td></tr><tr><td>3</td><td>companionship</td><td>❌</td><td>📚 Unknown</td><td>Vocabulary</td></tr><tr><td>4</td><td>...</td><td>...</td><td>...</td><td>...</td></tr></tbody></table></div>
+<p>این جدول بعداً نشان می‌دهد مشکل اصلی بیشتر در کدام قسمت است.</p>
+<hr>
+<h1>29. 🧠 سؤال طلایی</h1>
+<p>هر بار که یک کلمه را در Transcript پیدا کردم، باید از خودم بپرسم:</p>
+<blockquote><strong>Did I not know it, or did I know it but fail to hear it?</strong></blockquote>
+<p>این سؤال یکی از مهم‌ترین عادت‌های Listening من باید باشد.</p>
+<hr>
+<h1>30. 🟢 Extensive Listening در برابر 🔴 Intensive Listening</h1>
+<div class="table-wrap"><table><thead><tr><th>🟢 Extensive Listening</th><th>🔴 Intensive Listening</th></tr></thead><tbody><tr><td>زیاد گوش دادن</td><td>کم ولی عمیق گوش دادن</td></tr><tr><td>تمرکز روی Meaning</td><td>تمرکز روی Details</td></tr><tr><td>معمولاً بدون Transcript</td><td>با Transcript</td></tr><tr><td>Pause کم</td><td>Pause زیاد</td></tr><tr><td>Replay محدود</td><td>Replay زیاد</td></tr><tr><td>Dictation معمولاً ندارد</td><td>Dictation دارد</td></tr><tr><td>Analysis کم</td><td>Analysis زیاد</td></tr><tr><td>هدف: Fluency</td><td>هدف: Accuracy</td></tr><tr><td>Exposure بیشتر</td><td>Problem Solving بیشتر</td></tr><tr><td>عادت دادن گوش به زبان</td><td>تعمیر مشکلات گوش</td></tr></tbody></table></div>
+<hr>
+<h1>31. 🎯 یک مثال کامل</h1>
+<p>فرض کنیم یک فایل 20 دقیقه‌ای داریم.</p>
+<h2>🟢 Extensive</h2>
+<p>کل فایل را گوش می‌دهیم:</p>
+<p><strong>20 Minutes → General Understanding</strong></p>
+<p>تمرکز:</p>
+<ul><li>Topic</li><li>Main Idea</li><li>General Meaning</li></ul>
+<p>و زیاد توقف نمی‌کنیم.</p>
+<hr>
+<h2>🔴 Intensive</h2>
+<p>از همان فایل فقط <strong>30 ثانیه</strong> انتخاب می‌کنیم.</p>
+<p>سپس:</p>
+<p><strong>30 Seconds</strong></p>
+<p>↓</p>
+<p><strong>Listen</strong></p>
+<p>↓</p>
+<p><strong>Dictation</strong></p>
+<p>↓</p>
+<p><strong>Transcript</strong></p>
+<p>↓</p>
+<p><strong>Compare</strong></p>
+<p>↓</p>
+<p><strong>Diagnose</strong></p>
+<p>↓</p>
+<p><strong>Pronunciation Analysis</strong></p>
+<p>↓</p>
+<p><strong>Replay</strong></p>
+<p>↓</p>
+<p><strong>Shadowing</strong></p>
+<p>↓</p>
+<p><strong>Listen Again</strong></p>
+<hr>
+<h1>32. 🧩 تفاوت اصلی دو روش</h1>
+<h3>🟢 Extensive</h3>
+<blockquote><strong>گوش را در معرض زبان قرار می‌دهد.</strong></blockquote>
+<h3>🔴 Intensive</h3>
+<blockquote><strong>مشکل گوش را پیدا و تعمیر می‌کند.</strong></blockquote>
+<h3>🗣️ Shadowing</h3>
+<blockquote><strong>الگوی صوتی را تثبیت می‌کند.</strong></blockquote>
+<h3>🔁 Repetition</h3>
+<blockquote><strong>شناخت صدا را قوی‌تر می‌کند.</strong></blockquote>
+<h3>⚡ Automatic Recognition</h3>
+<blockquote><strong>هدف نهایی سیستم است.</strong></blockquote>
+<hr>
+<h1>33. ⏱️ برنامه روزانه پیشنهادی</h1>
+<p>لازم نیست ساعت‌ها Listening کار کنیم.</p>
+<p>یک برنامه 25–30 دقیقه‌ای کافی است:</p>
+<div class="table-wrap"><table><thead><tr><th>بخش</th><th>زمان</th><th>فعالیت</th></tr></thead><tbody><tr><td>🟢 Extensive</td><td>10–15 min</td><td>Listening for General Meaning</td></tr><tr><td>🔴 Intensive</td><td>10 min</td><td>Dictation + Analysis</td></tr><tr><td>🗣️ Shadowing</td><td>5 min</td><td>Repeat + Rhythm + Stress</td></tr></tbody></table></div>
+<p><strong>Total: 25–30 minutes</strong></p>
+<hr>
+<h1>34. 🟢 برنامه Extensive روزانه</h1>
+<p><strong>10–15 دقیقه</strong></p>
+<ol><li>Choose Audio</li><li>Listen Continuously</li><li>Don't Pause Constantly</li><li>Focus on Meaning</li><li>Finish the Audio</li><li>Recall the Main Idea</li></ol>
+<hr>
+<h1>35. 🔴 برنامه Intensive روزانه</h1>
+<p><strong>حدود 10 دقیقه</strong></p>
+<p>فقط <strong>5–10 جمله</strong> انتخاب کن.</p>
+<ol><li>Listen</li><li>Dictate</li><li>Check Transcript</li><li>Compare</li><li>Diagnose</li><li>Analyze Sound</li><li>Targeted Practice</li><li>Listen Again</li><li>Shadow</li></ol>
+<hr>
+<h1>36. 🗣️ برنامه Shadowing</h1>
+<p><strong>حدود 5 دقیقه</strong></p>
+<p>همان جمله‌هایی را که در Intensive کار کردی انتخاب کن.</p>
+<p>تمرکز روی:</p>
+<ul><li>Rhythm</li><li>Stress</li><li>Intonation</li><li>Linking</li><li>Speed</li><li>Pronunciation</li></ul>
+<hr>
+<h1>37. 🔄 چرخه ترکیبی</h1>
+<p>سیستم کامل:</p>
+<p><strong>🟢 Extensive Listening</strong></p>
+<p>↓</p>
+<p><strong>General Exposure</strong></p>
+<p>↓</p>
+<p><strong>🔴 Intensive Listening</strong></p>
+<p>↓</p>
+<p><strong>Problem Identification</strong></p>
+<p>↓</p>
+<p><strong>Targeted Practice</strong></p>
+<p>↓</p>
+<p><strong>🗣️ Shadowing</strong></p>
+<p>↓</p>
+<p><strong>🔁 Repeated Listening</strong></p>
+<p>↓</p>
+<p><strong>⚡ Automatic Recognition</strong></p>
+<hr>
+<h1>38. 📅 چرخه هفتگی</h1>
+<p>در طول هفته:</p>
+<p><strong>Extensive Exposure</strong></p>
+<p>+</p>
+<p><strong>Intensive Analysis</strong></p>
+<p>+</p>
+<p><strong>Shadowing</strong></p>
+<p>+</p>
+<p><strong>Repeated Exposure</strong></p>
+<p>باعث می‌شود مشکل‌هایی که در Intensive پیدا شده‌اند، دوباره در انگلیسی واقعی دیده و شنیده شوند.</p>
+<h3>مسیر</h3>
+<p><strong>Intensive</strong></p>
+<p>↓</p>
+<p><strong>Problem Identified</strong></p>
+<p>↓</p>
+<p><strong>Problem Fixed</strong></p>
+<p>↓</p>
+<p><strong>Extensive Exposure</strong></p>
+<p>↓</p>
+<p><strong>More Real Examples</strong></p>
+<p>↓</p>
+<p><strong>Recognition Strengthens</strong></p>
+<hr>
+<h1>39. ❌ چه کارهایی نباید انجام بدهم؟</h1>
+<h2>اشتباه 1</h2>
+<p>هر بار یک کلمه را نفهمیدم، فوراً Transcript را باز کنم.</p>
+<h3>بهتر:</h3>
+<p>اول خودم تلاش کنم بشنوم.</p>
+<hr>
+<h2>اشتباه 2</h2>
+<p>هر کلمه‌ای که نشنیدم را Vocabulary Problem بدانم.</p>
+<h3>بهتر:</h3>
+<p>اول بپرسم:</p>
+<blockquote><strong>Did I know this word?</strong></blockquote>
+<hr>
+<h2>اشتباه 3</h2>
+<p>فقط Podcast زیاد گوش بدهم و هیچ تحلیلی نکنم.</p>
+<h3>مشکل:</h3>
+<p>ممکن است بعضی مشکلات ثابت باقی بمانند.</p>
+<h3>بهتر:</h3>
+<p><strong>Extensive + Intensive</strong></p>
+<hr>
+<h2>اشتباه 4</h2>
+<p>فقط Intensive Listening انجام بدهم.</p>
+<h3>مشکل:</h3>
+<p>ممکن است تمرین بیش از حد خسته‌کننده شود.</p>
+<h3>بهتر:</h3>
+<p><strong>Intensive برای تعمیر</strong></p>
+<p>+</p>
+<p><strong>Extensive برای Exposure</strong></p>
+<hr>
+<h2>اشتباه 5</h2>
+<p>بعد از دیدن Transcript فقط معنی کلمه را یاد بگیرم.</p>
+<p>اگر کلمه را قبلاً می‌دانستم، مشکل Vocabulary نبوده.</p>
+<p>باید بررسی کنم:</p>
+<ul><li>Sound</li><li>Pronunciation</li><li>Linking</li><li>Weak Forms</li><li>Stress</li><li>Rhythm</li><li>Speed</li></ul>
+<hr>
+<h1>40. 🧠 اصل مهم درباره Transcript</h1>
+<p>Transcript را نباید دشمن Listening بدانیم.</p>
+<p>Transcript باید در <strong>زمان درست</strong> استفاده شود.</p>
+<h3>ترتیب درست</h3>
+<p><strong>First Listen</strong></p>
+<p>↓</p>
+<p><strong>Try to Understand</strong></p>
+<p>↓</p>
+<p><strong>Dictation</strong></p>
+<p>↓</p>
+<p><strong>Transcript Check</strong></p>
+<p>↓</p>
+<p><strong>Diagnosis</strong></p>
+<p>↓</p>
+<p><strong>Practice</strong></p>
+<p>↓</p>
+<p><strong>Listen Again</strong></p>
+<h3>نه:</h3>
+<p><strong>Audio → Transcript immediately</strong></p>
+<p>چون در این حالت ممکن است به‌جای آموزش گوش، فقط از متن کمک بگیریم.</p>
+<hr>
+<h1>41. 🎧 سیستم Listening کامل</h1>
+<p><strong>REAL ENGLISH</strong></p>
+<p>↓</p>
+<p><strong>🟢 EXTENSIVE LISTENING</strong></p>
+<p>↓</p>
+<p>General Meaning</p>
+<p>↓</p>
+<p><strong>🔴 INTENSIVE LISTENING</strong></p>
+<p>↓</p>
+<p>Dictation</p>
+<p>↓</p>
+<p>Transcript Check</p>
+<p>↓</p>
+<p>Compare</p>
+<p>↓</p>
+<p>Diagnose</p>
+<p>↓</p>
+<p><strong>Unknown Word?</strong></p>
+<p>→ Vocabulary</p>
+<p><strong>Known but Not Heard?</strong></p>
+<p>→ Sound Recognition</p>
+<p><strong>Connected Speech?</strong></p>
+<p>→ Connected-Speech Training</p>
+<p><strong>Weak Form?</strong></p>
+<p>→ Weak-Form Training</p>
+<p><strong>Pronunciation?</strong></p>
+<p>→ Pronunciation Training</p>
+<p><strong>Speed?</strong></p>
+<p>→ Speed Training</p>
+<p>↓</p>
+<p><strong>🎯 Targeted Practice</strong></p>
+<p>↓</p>
+<p><strong>🎧 Listen Again</strong></p>
+<p>↓</p>
+<p><strong>🗣️ Shadowing</strong></p>
+<p>↓</p>
+<p><strong>🔁 Repetition</strong></p>
+<p>↓</p>
+<p><strong>⚡ Automatic Recognition</strong></p>
+<hr>
+<h1>42. 🎯 هدف نهایی</h1>
+<p>هدف این نیست که:</p>
+<blockquote>«من باید همه کلمات را همیشه بفهمم.»</blockquote>
+<p>هدف این است که به‌تدریج:</p>
+<p><strong>❌ I don't know the word.</strong></p>
+<p>↓</p>
+<p><strong>🟡 I know the word but can't hear it.</strong></p>
+<p>↓</p>
+<p><strong>🟢 I can hear it with concentration.</strong></p>
+<p>↓</p>
+<p><strong>🔵 I recognize it naturally.</strong></p>
+<p>↓</p>
+<p><strong>⚡ I recognize it automatically.</strong></p>
+<hr>
+<h1>43. 🚀 نتیجه‌ای که باید دنبال کنم</h1>
+<p>در نهایت باید از این حالت:</p>
+<p><strong>Audio → Sound → Guess → Translate → Understand</strong></p>
+<p>به این حالت نزدیک شویم:</p>
+<p><strong>Audio → Sound → Meaning</strong></p>
+<p>و در سطح بالاتر:</p>
+<p><strong>Audio → Meaning</strong></p>
+<p>بدون اینکه لازم باشد هر کلمه را آگاهانه در ذهن ترجمه کنیم.</p>
+<hr>
+<h1>44. ⭐ فرمول نهایی Listening</h1>
+<blockquote><strong>Listen → Diagnose → Fix → Listen Again → Shadow → Repeat → Recognize</strong></blockquote>
+<p>یا به شکل کامل‌تر:</p>
+<p><strong>Exposure</strong></p>
+<p>↓</p>
+<p><strong>Analysis</strong></p>
+<p>↓</p>
+<p><strong>Diagnosis</strong></p>
+<p>↓</p>
+<p><strong>Targeted Practice</strong></p>
+<p>↓</p>
+<p><strong>Re-listening</strong></p>
+<p>↓</p>
+<p><strong>Shadowing</strong></p>
+<p>↓</p>
+<p><strong>Repetition</strong></p>
+<p>↓</p>
+<p><strong>Automatic Recognition</strong></p>
+<hr>
+<h1>45. 🏁 Final Principle</h1>
+<p><strong>🟢 Extensive Listening</strong>  <br>گوش را در معرض مقدار زیادی انگلیسی واقعی قرار می‌دهد.</p>
+<p><strong>🔴 Intensive Listening</strong>  <br>مشکلات دقیق Listening را پیدا و اصلاح می‌کند.</p>
+<p><strong>🗣️ Shadowing</strong>  <br>الگوهای صوتی، ریتم، استرس و اتصال صداها را تثبیت می‌کند.</p>
+<p><strong>🔁 Repeated Listening</strong>  <br>باعث می‌شود الگوهای صوتی بیشتر در ذهن تثبیت شوند.</p>
+<p><strong>⚡ Automatic Recognition</strong>  <br>هدف نهایی است.</p>
+<p>بنابراین هدف فقط این نیست:</p>
+<blockquote><strong>&quot;I should listen more.&quot;</strong></blockquote>
+<p>بلکه:</p>
+<blockquote><strong>&quot;I should listen strategically.&quot;</strong></blockquote>
+<p>و سیستم اصلی من باید این باشد:</p>
+<p><strong>🟢 Extensive Listening</strong></p>
+<p>+</p>
+<p><strong>🔴 Intensive Listening</strong></p>
+<p>+</p>
+<p><strong>🗣️ Shadowing</strong></p>
+<p>+</p>
+<p><strong>🔁 Repetition</strong></p>
+<p>↓</p>
+<h1>⚡ Automatic Listening Recognition</h1></main>
+<a class="top" href="#top">↑ Back to top</a>
+<div class="meta">Rendered directly from 🎧 LISTENING.md</div>
+</div>
+</body>
+</html>
