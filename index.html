@@ -45,6 +45,36 @@
 .logo-name{font-family:Arial,sans-serif;font-size:5.2px;font-weight:800;letter-spacing:1.1px;fill:var(--accent2)}
 .logo-mb{font-family:Arial,sans-serif;font-size:17px;font-weight:900;letter-spacing:2px;fill:var(--accent2)}
 @media(max-width:700px){.logo{width:60px;height:60px;right:12px;top:12px}.logo-name{font-size:5px;letter-spacing:.6px}.logo-mb{font-size:18px}}
+</style><style>
+/* Back to top: circular arrow, fixed bottom-left */
+a.top{
+position:fixed!important;
+left:22px!important;
+right:auto!important;
+bottom:22px!important;
+top:auto!important;
+margin:0!important;
+width:46px!important;
+height:46px!important;
+padding:0!important;
+display:flex!important;
+align-items:center!important;
+justify-content:center!important;
+border-radius:50%!important;
+background:#123b2a!important;
+color:#fff!important;
+text-decoration:none!important;
+font-size:25px!important;
+font-weight:700!important;
+line-height:1!important;
+z-index:2000!important;
+box-shadow:0 8px 22px rgba(18,59,42,.25)!important;
+transition:transform .2s,background .2s!important;
+}
+a.top:hover{transform:translateY(-3px)!important;background:var(--accent)!important}
+@media(max-width:700px){
+a.top{left:12px!important;bottom:14px!important;width:42px!important;height:42px!important;font-size:22px!important}
+}
 </style></head>
 <body id="top"><div class="logo" aria-label="Mohammad Bakhshandeh">
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -626,7 +656,7 @@
 <p><strong>🔁 Repetition</strong></p>
 <p>↓</p>
 <h1>⚡ Automatic Listening Recognition</h1></main>
-<a class="top" href="#top">↑ Back to top</a>
+<a class="top" href="#top" aria-label="Back to top">↑</a>
 <div class="meta">Rendered directly from 🎧 LISTENING.md</div>
 </div>
 <script>
