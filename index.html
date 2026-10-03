@@ -38,16 +38,21 @@
 .logo-name{font-family:Inter,Arial,sans-serif;font-size:5.8px;font-weight:800;letter-spacing:1px;fill:var(--accent2);text-transform:uppercase}
 .logo-mb{font-family:Inter,Arial,sans-serif;font-size:22px;font-weight:900;letter-spacing:2px;fill:var(--accent2)}
 @media(max-width:700px){.logo{width:82px;height:82px;right:12px;top:12px}.logo-name{font-size:5.5px;letter-spacing:.8px}.logo-mb{font-size:18px}}
+</style><style>
+.logo{position:fixed;right:22px;top:22px;width:100px;height:100px;z-index:1000;border-radius:50%;background:transparent;overflow:visible;filter:drop-shadow(0 8px 18px rgba(15,106,73,.2))}
+.logo svg{display:block;width:100%;height:100%;overflow:visible}
+.logo-bg{fill:rgba(255,255,255,.97);stroke:var(--accent);stroke-width:2.5}
+.logo-name{font-family:Arial,sans-serif;font-size:6.2px;font-weight:800;letter-spacing:1.1px;fill:var(--accent2)}
+.logo-mb{font-family:Arial,sans-serif;font-size:23px;font-weight:900;letter-spacing:2px;fill:var(--accent2)}
+@media(max-width:700px){.logo{width:78px;height:78px;right:12px;top:12px}.logo-name{font-size:6px;letter-spacing:.8px}.logo-mb{font-size:18px}}
 </style></head>
 <body id="top"><div class="logo" aria-label="Mohammad Bakhshandeh">
-  <svg viewBox="0 0 100 100" aria-hidden="true">
-    <defs><path id="logoCircle" d="M 50,50 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"/></defs>
-    <circle cx="50" cy="50" r="46" fill="rgba(255,255,255,.97)" stroke="var(--accent)" stroke-width="2.5"/>
-    <circle cx="50" cy="50" r="33" fill="none" stroke="var(--line)" stroke-width="1"/>
-    <text class="logo-name"><textPath href="#logoCircle" startOffset="0%">Mohammad Bakhshandeh • Mohammad Bakhshandeh • </textPath></text>
-    <text x="50" y="57" text-anchor="middle" class="logo-mb">MB</text>
-  </svg>
-</div>
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<defs><path id="namePath" d="M 50,50 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"/></defs>
+<circle cx="50" cy="50" r="48" class="logo-bg"/>
+<text class="logo-name"><textPath href="#namePath" startOffset="50%" text-anchor="middle">Mohammad Bakhshandeh</textPath></text>
+<text x="50" y="57" text-anchor="middle" class="logo-mb">MB</text>
+</svg></div>
 <div class="wrap">
 <header class="hero"><h1>🎧 Listening Improvement System</h1><p>From Intermittent Listening to Automatic Recognition</p></header>
 <main class="content"><h1>🎧 Listening Improvement System</h1>
